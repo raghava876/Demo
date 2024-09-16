@@ -1,0 +1,21 @@
+import java.io.*; 
+import javax.servlet.*; 
+import javax.servlet.http.*; 
+Public class HelloForm extends HttpServlet{ 
+Public void doPost(HttpServletRequest request,HttpServletResponse response) 
+throwsServletException,IOException
+{ 
+doGet(request, response); 
+} 
+}
+*********************************
+<html> 
+<body> 
+<form action="HelloForm" method="POST"> 
+First Name: <input type="text" name="first_name"> 
+<br/> 
+Last Name: <input type="text" name="last_name"/> 
+<input type="submit" value="Submit"/> 
+</form> 
+</body> 
+</html>
